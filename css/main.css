@@ -1,0 +1,151 @@
+.parallax-container {
+    height: 55em;
+    margin-bottom: 1.5em;
+}
+
+.parallax-container h1 {
+    margin-top: 3em;
+    color: #333;
+    font-size: 5em;
+}
+
+.parallax-container p {
+    font-size: 3em;
+    color: #300;
+}
+
+.nav-wrapper a:hover {
+    color: #f8f000;
+}
+
+.post p,
+.post li {
+    font-size: 1.52em;
+}
+
+.post li {
+    line-height: 1.52;
+}
+
+.post {
+    padding: 2.5em 1.8em;
+    margin: 1.2em;
+}
+
+.post ul {
+    padding: 2em;
+}
+
+.post ul li {
+    list-style-type: square;
+    color: #333;
+}
+
+.post p capi {
+    font-size: 4.5em;
+    color: #333;
+    margin-top: 0.52em;
+    display: inline-block;
+}
+
+.post ul a,
+.post ol a,
+.post p a {
+    color: #000;
+    border-bottom: 3px dotted #1a237e;
+}
+
+.post ul a:hover,
+.post ol a:hover,
+.post p a:hover {
+    border-bottom: 4px solid #1a237e;
+}
+
+.post-author {
+    font-size: 1.4em;
+    clip: #333;
+    margin: 1em;
+}
+
+.post-author a {
+    color: #333;
+}
+
+.post-author a:hover {
+    border-bottom: 4px solid #1a237e;
+}
+
+.post-author img {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.post-author img:hover {
+    opacity: 1;
+}
+
+.warning {
+    padding: 4em;
+    margin: 6em;
+}
+
+.warning i {
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.post img {
+    height: 30em !important;
+    opacity: .99;
+    cursor: pointer;
+}
+
+.post img:hover {
+    opacity: .8;
+}
+
+footer {
+    font-size: 1.15em;
+    line-height: 2;
+    padding-top: 4em;
+}
+
+footer .container {
+    margin-top: 2.5em;
+}
+
+
+/* label color */
+
+.input-field label {
+    color: #fff;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
+    color: #fff;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+
+@media screen and (max-width: 900px) {
+    .parallax-container h1 {
+        margin-top: 2.8em;
+        font-size: 3em;
+    }
+    .parallax-container p {
+        font-size: 1.5em;
+    }
+    .warning {
+        padding: 2em;
+        margin: 2em;
+    }
+}
