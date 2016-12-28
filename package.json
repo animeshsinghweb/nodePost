@@ -1,0 +1,28 @@
+{
+    "name": "nodepost",
+    "version": "1.2.0",
+    "description": "Simple, Awesome, Responsive UI for Blogs building upon NodeJs.",
+    "main": "helloworld.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/animeshsinghweb/nodePost.git"
+    },
+    "keywords": [
+        "nodePost",
+        "PostUI",
+        "nodeUI",
+        "blogsUI"
+    ],
+    "author": "Animesh Singh",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/animeshsinghweb/nodePost/issues"
+    },
+    "homepage": "https://github.com/animeshsinghweb/nodePost#readme",
+    "dependencies": {
+        "qr-image": "^3.2.0"
+    }
+}

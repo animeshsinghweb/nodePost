@@ -1,17 +1,59 @@
+body {
+    background: #E7E7E7;
+}
+
+.bigNav {
+    height: 8em;
+    padding-top: 2em;
+}
+
+.noColorNav {
+    background: none !important;
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+.brand-logo img {
+    margin-top: 0.4em;
+}
+
 .parallax-container {
     height: 55em;
     margin-bottom: 1.5em;
 }
 
+.nodePostGradient {
+    /*background: rgba(255, 179, 0, .61);*/
+    background: rgba(0, 92, 151, 0.73);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, rgba(0, 92, 151, 0.73), rgba(54, 55, 149, 0.73));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, rgba(0, 92, 151, 0.73), rgba(54, 55, 149, 0.73));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition-duration: 3.5s;
+}
+
+.nodePostGradient:hover {
+    transition-duration: 3.5s;
+    background: rgba(0, 92, 151, 0.88);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, rgba(0, 92, 151, 0.88), rgba(54, 55, 149, 0.88));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, rgba(0, 92, 151, 0.88), rgba(54, 55, 149, 0.88));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .parallax-container h1 {
-    margin-top: 3em;
-    color: #333;
-    font-size: 5em;
+    margin-top: 1.5em;
+    color: #fff;
+    font-size: 6em;
+    padding: 0.2em 1.25em;
 }
 
 .parallax-container p {
     font-size: 3em;
-    color: #300;
+    color: #eee;
+    padding: 0 2em;
 }
 
 .nav-wrapper a:hover {
@@ -29,7 +71,8 @@
 
 .post {
     padding: 2.5em 1.8em;
-    margin: 1.2em;
+    padding-bottom: 5.5em !important;
+    margin: 2.2em;
 }
 
 .post ul {
@@ -61,18 +104,29 @@
     border-bottom: 4px solid #1a237e;
 }
 
+a.borderMeNot,
+a.borderMeNot:hover {
+    border-bottom: none !important;
+}
+
 .post-author {
     font-size: 1.4em;
-    clip: #333;
+    color: #eee;
     margin: 1em;
 }
 
 .post-author a {
-    color: #333;
+    color: #eee;
 }
 
+.about-author a:hover,
+.hostAd a:hover,
 .post-author a:hover {
-    border-bottom: 4px solid #1a237e;
+    border-bottom: 4px solid #ff8f00;
+}
+
+a.insert-gravatar[data-gravatarUseIn='post-author']:hover {
+    border-bottom: none !important;
 }
 
 .post-author img {
@@ -86,7 +140,7 @@
 
 .warning {
     padding: 4em;
-    margin: 6em;
+    margin: 1.25em;
 }
 
 .warning i {
@@ -104,6 +158,44 @@
     opacity: .8;
 }
 
+.post pre {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    background: #333;
+    color: #ffb300;
+    border: 1.5px solid #ffb300;
+    font-weight: 400;
+}
+
+.post pre::-webkit-selection,
+.post pre::-moz-selection {
+    background: #eee !important;
+}
+
+.post pre::-webkit-scrollbar {
+    width: 4px;
+}
+
+.post pre::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.post pre::-webkit-scrollbar-thumb {
+    background: #ffbf00;
+}
+
+.post pre::-webkit-scrollbar-thumb:hover {
+    /*It moreover allows you to change the color of the scrollbar when hovered on it*/
+    background: #ff8f00;
+}
+
+.post code.inlCode {
+    color: #1a237e;
+    padding: 0.1em;
+    /*border: 1px solid #ffb300;*/
+    background: #c5cae9;
+}
+
 footer {
     font-size: 1.15em;
     line-height: 2;
@@ -112,6 +204,108 @@ footer {
 
 footer .main-container {
     margin-top: 2.5em;
+}
+
+.main-container {
+    padding: 1.2em;
+}
+
+.main-container .row .col.sidebar {
+    padding: 1.5em;
+}
+
+.sidebar-content {
+    margin: .15em;
+}
+
+.hostAd {
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 2em;
+    background: #005C97;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #005C97, #363795);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #005C97, #363795);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.disqus-comments {
+    margin-top: 2em;
+}
+
+.about-author {
+    padding: 1.5em !important;
+}
+
+.about-author h2 {
+    font-size: 2em;
+}
+
+.about-author h2 span {
+    padding: 0.3em;
+    font-size: .71em;
+    border-left: 3px solid #76ff03;
+    color: #76ff03;
+}
+
+.hostAd a,
+.about-author a {
+    color: #76ff03;
+}
+
+.about-author p {
+    font-size: 1.2em;
+    padding: 1.2em;
+    margin: .7em;
+    background: rgba(33, 33, 33, 0.5);
+    border-radius: 10%;
+}
+
+.about-author .author-icons a {
+    font-size: 2.3em;
+    padding: .05em;
+    margin: .06em;
+    color: #76ff03 !important;
+}
+
+.about-author .author-icons a:hover {
+    border-bottom: none!important;
+    color: #ffb300 !important;
+}
+
+a.insert-gravatar[data-gravatarUseIn='about-author'] img {
+    border-radius: 50%;
+    margin-top: 6.5em;
+    border: 6px solid #76ff03;
+    padding: 0.35em;
+    opacity: .89;
+}
+
+.side-nav a.insert-gravatar[data-gravatarUseIn='about-author'] img {
+    margin-left: 22% !important;
+}
+
+.side-nav li:hover,
+.side-nav li i:hover {
+    background: #303f9f;
+    color: #ffb300 !important;
+}
+
+.side-nav .name {
+    font-size: 1.6em !important;
+}
+
+.side-nav .email {
+    font-size: 1em !important;
+}
+
+a.insert-gravatar[data-gravatarUseIn='about-author'] img:hover {
+    padding: 0.25em;
+    /*border-color: #2196f3;*/
+    border-color: #ff8f00;
+    opacity: 1;
 }
 
 
@@ -138,7 +332,7 @@ footer .main-container {
 
 @media screen and (max-width: 900px) {
     .parallax-container h1 {
-        margin-top: 2.8em;
+        margin-top: 1.42em !important;
         font-size: 3em;
     }
     .parallax-container p {
@@ -147,5 +341,14 @@ footer .main-container {
     .warning {
         padding: 2em;
         margin: 2em;
+    }
+    .post {
+        padding-bottom: 5.5em !important;
+    }
+    a.insert-gravatar[data-gravatarUseIn='about-author'] img {
+        width: 160px !important;
+        margin-top: 0.52em;
+        margin-left: 30%;
+        margin-bottom: 1em;
     }
 }
